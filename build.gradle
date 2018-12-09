@@ -7,12 +7,18 @@ apply plugin: 'application'
 sourceSets {
     main {
         scala {
-            srcDirs = ['src/main/scala']
+            srcDirs = ['src/main/scala','src/main/java']
+        }
+		java {
+            srcDirs = []
         }
     }
     test {
         scala {
-            srcDirs = ['src/test/scala']
+            srcDirs = ['src/test/scala','src/test/java']
+        }
+		java {
+            srcDirs = []
         }
     }
 }
